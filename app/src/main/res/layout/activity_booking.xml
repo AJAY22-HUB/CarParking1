@@ -8,99 +8,22 @@
     tools:context=".Booking">
 
     <TextView
-        android:id="@+id/bookingView"
-        android:layout_width="231dp"
-        android:layout_height="78dp"
-        android:layout_marginTop="30dp"
-        android:width="200dp"
-        android:text="Parking Booking"
+        android:id="@+id/parkingTextview"
+        android:layout_width="219dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/Parking_View"
         android:textSize="30sp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.474"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/textVehicleName"
+    <RadioGroup
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="72dp"
-        android:width="200dp"
-        android:hint="Vehicle Name"
-        android:inputType="text"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/bookingView" />
+        app:layout_constraintStart_toStartOf="@+id/"
 
-    <EditText
-        android:id="@+id/textVehicleNo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:width="200dp"
-        android:hint="Vehicle No"
-        android:inputType="text"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVehicleName" />
 
-    <EditText
-        android:id="@+id/EntryTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:width="200dp"
-        android:hint="Entry Time"
-        android:inputType="time"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textVehicleNo" />
 
-    <EditText
-        android:id="@+id/ExitTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:width="200dp"
-        android:hint="Exit Time"
-        android:inputType="time"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/EntryTime" />
-
-    <TextView
-        android:id="@+id/TotalCost"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:width="200dp"
-        android:text="Total Cost"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.208"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/ExitTime" />
-
-    <Button
-        android:id="@+id/Payment"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="236dp"
-        android:layout_marginRight="236dp"
-        android:layout_marginBottom="16dp"
-        android:text="Payment"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/TotalCost"
-        app:layout_constraintVertical_bias="0.311" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
